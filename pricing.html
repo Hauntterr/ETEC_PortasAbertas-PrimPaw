@@ -88,6 +88,11 @@
 		
 		
     		<div class="row">
+				
+				
+				
+				
+				
     			<div class="col-md-4 ftco-animate">
 	          <div class="block-7">
 	          	<div class="img" style="background-image: url(images/pricing-1.jpg);"></div>
@@ -99,6 +104,21 @@
 	            </div>
 	          </div>
 	        </div>
+			<div class="col-md-4 ftco-animate">
+				<div class="block-7">
+					<div class="img" style="background-image: url(images/pricing-1.jpg);"></div>
+				  <div class="text-center p-4">
+					  <span class="excerpt d-block">Personal</span>
+					  <span class="price"><sup>R$</sup> <span class="number">49,99</span></span>
+  
+					  <a href="#" class="btn btn-primary d-block px-2 py-3">Adicionar ao Carrinho</a>
+				  </div>
+				</div>
+			  </div>
+			
+			
+			
+			
 	      </div>
     	</div>
     </section>
@@ -200,52 +220,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Amand
   <script src="js/main.js"></script>
 
 
-  
-  
-  
-  <script>
-	async function carregarProdutos() {
-		const apiUrl = 'https://localhost:7289/Produto'; // Altere a URL da API conforme necessário
-
-		try {
-			const response = await fetch(apiUrl);
-			if (!response.ok) {
-				throw new Error('Erro ao buscar produtos da API');
-			}
-
-			const produtos = await response.json();
-
-			const produtosContainer = document.getElementById('produtos-container');
-
-			produtos.forEach(produto => {
-				
-				produtoDiv.classList.add('produto');
-
-				nomeProduto.textContent = produto.nome;
-				
-				imagemProduto.src = produto.img;
-
-				precoProduto.textContent = `Preço: R$ ${produto.preco.toFixed(2)}`;
-
-				produtoDiv.appendChild(nomeProduto);
-				produtoDiv.appendChild(imagemProduto);
-				produtoDiv.appendChild(precoProduto);
-
-				produtosContainer.appendChild(produtoDiv);
-				
-				nomeProduto = id="nomeproduto";
-				
-			});
-		} catch (error) {
-			console.error(error);
-		}
-	}
-
-	carregarProdutos();
-</script>
-  
-  
-  
     
   </body>
 </html>
