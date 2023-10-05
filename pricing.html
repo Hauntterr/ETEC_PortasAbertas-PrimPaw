@@ -79,13 +79,13 @@
     	
 		
 		
-    		
+    		<h1 class="pti">Produtos</h1>
+		
 				
-				
-		<div id="produtos-container"></div>
+			<div id="produtos-container"></div>
 	        
-				
-					
+			
+			
 				
 				
 	      
@@ -182,30 +182,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Amand
 			const produtosContainer = document.getElementById('produtos-container');
 
 			produtos.forEach(produto => {
-				const produtoDiv = document.createElement('div');
-				produtoDiv.classList.add('pproduto');
+			const produtoDiv = document.createElement('div');
+			produtoDiv.classList.add('produto'); // Adicione a classe 'produto' à div
 
-				const nomeProduto = document.createElement('h2');
-				produtoDiv.classList.add('pnome');
-				nomeProduto.textContent = produto.nome;
+			// Cria uma tag de imagem e define o src com a imagem em base64
+			const imagemElement = document.createElement('img');
+			imagemElement.classList.add('pimg'); // Adicione a classe 'pimg' à imagem
+			imagemElement.src = `data:image/jpeg;base64,${produto.img}`;
+			
+			const nomeProduto = document.createElement('h2');
+			nomeProduto.classList.add('pnome'); // Adicione a classe 'pnome' ao título
+			nomeProduto.textContent = produto.nome;
 
-				// Cria uma tag de imagem e define o src com a imagem em base64
-				const imagemElement = document.createElement('img');
-				produtoDiv.classList.add('pimg');
-				imagemElement.src = `data:image/jpeg;base64,${produto.img}`;
+			const precoProduto = document.createElement('p');
+			precoProduto.classList.add('ppreco'); // Adicione a classe 'ppreco' ao parágrafo
+			precoProduto.textContent = `Preço: R$ ${produto.preco.toFixed(2)}`;
 
-				// Adiciona a imagem ao corpo do documento
-				produtosContainer.appendChild(imagemElement);				
+			produtoDiv.appendChild(imagemElement);
+			produtoDiv.appendChild(nomeProduto);
+			produtoDiv.appendChild(precoProduto);
 
-				const precoProduto = document.createElement('p');
-				produtoDiv.classList.add('ppreco');
-				precoProduto.textContent = `Preço: R$ ${produto.preco.toFixed(2)}`;
-
-				produtosContainer.appendChild(nomeProduto);
-				//produtoDiv.appendChild(imagemProduto);
-				produtosContainer.appendChild(precoProduto);
-
-				produtosContainer.appendChild(produtoDiv);
+			produtosContainer.appendChild(produtoDiv);
 			});
 		} catch (error) {
 			console.error(error);

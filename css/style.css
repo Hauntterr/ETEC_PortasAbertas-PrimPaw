@@ -9802,9 +9802,44 @@ textarea.form-control {
     
     /* produtos */
     
-.pproduto{
-  width: 25rem;
-  height: 26rem;
-  background-color: #004085;
+    .pp{
+      
+    }
+    
+    
+    .pti{
+      font-size: 2.5rem;
+      font-weight: bolder;
+      text-align: center;
+    }
+    
+    .produto{
+      display: inline-block;
+      border: 0.4rem inset #495057;
+      border-radius: 1rem;
+      width: 26rem;
+      height: 29rem;
+      background-color: #adb5bd;
+      margin-top: 3rem;
+      margin-left: 0rem;
+      margin-left: 1.5rem;
+  }
+
+  .pimg{
+    border: 0.4rem solid #495057;
+    border-radius: 0.5rem;
+      width: 25.3rem;
+      height: 22.5rem;
+  }
   
-}
+  .pnome{
+    font-weight:bold;
+    margin-left: 0.2rem;
+  }
+
+  .ppreco{
+      font-weight:bold;
+      font-size: 1.1rem;
+      color: #000;
+      margin-left: 0.2rem;
+  }
