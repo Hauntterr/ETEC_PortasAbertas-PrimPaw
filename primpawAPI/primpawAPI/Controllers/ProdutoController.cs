@@ -35,9 +35,13 @@ namespace primpawAPI.Controllers
                     {
                         Id = Convert.ToInt32(reader["Id"]),
                         Nome = reader["Nome"].ToString(),
-                        Img = reader["Img"].ToString(),
                         Preco = Convert.ToDecimal(reader["Preco"])
                     };
+
+                    //byte[] imageArray = System.IO.File.ReadAllBytes(@"D:\primpawAPI\primpawAPI\pimg\agua.jpg");
+
+                    // Converte os bytes da imagem em uma string base64
+                    produtos.Img = reader["Img"].ToString();
 
                     produto.Add(produtos);
                 }

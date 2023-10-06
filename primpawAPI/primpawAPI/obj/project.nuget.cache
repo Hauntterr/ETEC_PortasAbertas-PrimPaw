@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DQayFxBhM/8ycSQXlg1M0Eo+DY7rLmO3mIGo1iUZSv8ZC6uB0RXqrxnRLREN2xw6HLsdN2ZPptBou674nbLoLw==",
+  "dgSpecHash": "M0gH9aiK4HycZ2xVhSfVwxLCXW3IOwS1xilu3So2wPat+AFx1vJcyMR1bGBPie2oeNOazyxblNZfbxHVPKCkBQ==",
   "success": true,
-  "projectFilePath": "D:\\Hauntterr\\ETEC_PortasAbertas-PrimPaw\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
+  "projectFilePath": "D:\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Brian\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\Brian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

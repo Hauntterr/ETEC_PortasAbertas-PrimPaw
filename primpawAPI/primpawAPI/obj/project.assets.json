@@ -1568,11 +1568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hauntterr\\ETEC_PortasAbertas-PrimPaw\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
+      "projectUniqueName": "D:\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
       "projectName": "primpawAPI",
-      "projectPath": "D:\\Hauntterr\\ETEC_PortasAbertas-PrimPaw\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
+      "projectPath": "D:\\primpawAPI\\primpawAPI\\primpawAPI.csproj",
       "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-      "outputPath": "D:\\Hauntterr\\ETEC_PortasAbertas-PrimPaw\\primpawAPI\\primpawAPI\\obj\\",
+      "outputPath": "D:\\primpawAPI\\primpawAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
